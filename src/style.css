@@ -1,0 +1,46 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #f1f1f1;
+  overflow: hidden;
+}
+html {
+  font-size: 62.5%;
+}
+video {
+  position: absolute;
+  visibility: hidden;
+  z-index: 10;
+}
+
+canvas {
+  width: 95vw;
+  height: 80vh;
+  border: 1px solid #b9b9b9;
+  border-radius: 3px;
+  background-color: #f1f1f1;
+  position: relative;
+  z-index: 100;
+  display: block;
+  margin-left: 12.5rem;
+  margin-top: 10rem;
+}
+
+@media screen and (min-width: 1300px) {
+  canvas {
+    width: 75vw;
+    height: 80vh;
+  }
+}
+@media screen and (max-width: 675px) {
+  canvas {
+    width: 80vw;
+    height: 70vw;
+    margin-left: 7rem;
+  }
+}
